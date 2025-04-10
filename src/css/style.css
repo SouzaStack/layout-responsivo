@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #64748b;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    place-content: center center;
+    background-color: #FF7F87;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: grid;
+    place-content: center center;
+    background-color: #63D3A6;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.layout-container {
+    display: flex;
+    gap: 10px;
+    height: calc(100% - 200px - 20px);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #F8D1D1;
+    width: 20%;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+menu > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 5px;
+}
+
+menu > ul > li a:hover {
+    text-decoration: underline;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    font-size: 1em;
+    color: blue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1EBFF;
+    width: 80%;
+    padding: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 10px;
+    background-color: #B3DAF1;
+    text-align: center;
+    padding: 25px;
+    width: calc(95% - -20px);
+}
+
+article > .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure, picture, .audio, .video {
+    display: grid;
+    place-content: center center;
+    background-color: #FFF9C4;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+figure > img, figcaption, 
+picture > source, img,
+audio, video {
+    display: none;
+}
+
+
+section {
+    background-color: #4DA6FF;
+    width: calc(95% - -20px);
+    margin: 10px 0;
+    padding: 20px;
+    display: grid;
+    place-content: center center;
+}
+
+footer {
+    background-color: #BBA9F1;
+    height: 40px;
+    display: grid;
+    place-content: center center;
+    margin-top: 10px;
+}
