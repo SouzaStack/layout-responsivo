@@ -17,9 +17,18 @@
         </ul>
     </nav>
 
-    <div class="layout">
+    <div class="layout-container">
         <aside>
             <h2>&lt;aside&gt;</h2>
+
+            <menu>
+                <ul>
+                    <li><a href="#">Figure</a></li>
+                    <li><a href="#">Picture</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </menu>
         </aside>
 
         <main>
@@ -28,12 +37,51 @@
             <article>
                 <h2>&lt;article&gt;</h2>
 
-                <figure>
-                    <img src="#" alt="Exemplo" />
-                    <figcaption>&lt;figure&gt;</figcaption>
-                </figure>
+                <div class="container">
+                    <figure>
+                        <h3>&lt;figure&gt;</h3>
 
-                <p>&lt;p&gt;</p>
+                        <img src="#" alt="Exemplo 1" />
+                        <figcaption>Descrição</figcaption>
+                    </figure>
+
+                    <picture>
+                        <h3>&lt;picture&gt;</h3>
+
+                        <source media="(max-width: 750px)" srcset="#" type="image/png">
+                        <source media="(max-width: 1050px)" srcset="#" type="image/jpeg">
+                        <img src="#" alt="Exemplo 2">
+                    </picture>
+
+                    <div class="audio">
+                        <h3>&lt;audio&gt;</h3>
+
+                        <audio preload="metadata" autoplay controls loop>
+                            <source src="#" type="audio/mpeg">
+                            <source src="#" type="audio/ogg">
+                            <p>
+                                Descrição de incompatibilidade...
+                                <a href="#" type="application/mp3">
+                                    Clique aqui
+                                </a>
+                                para baixar o arquivo MP3
+                            </p>
+                        </audio>
+                    </div>
+
+                    <div class="video">
+                        <h3>&lt;video&gt;</h3> <!-- Isso serve apenas para identificar o exemplo abaixo. -->
+
+                        <video width="500" poster="imagens/#.png" controls autoplay loop>
+                            <!-- A ordem do video importa ele tenta carregar do primeiro ao ultimo -->
+                            <source src="midia/meu-video.mp4" type="video/mp4">
+                            <source src="midia/meu-video.m4v" type="video/mp4">
+                            <source src="midia/meu-video.webm" type="video/webm">
+                            <source src="midia/meu-video.ogv" type="video/ogg">
+                            <p>Descrição de incompatibilidade...</p>
+                        </video>
+                    </div>
+                </div>
             </article>
 
             <section>
