@@ -12,19 +12,16 @@ body {
 }
 
 header {
-    display: grid;
-    place-content: center center;
     background-color: #FF7F87;
-    height: 100px;
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
 }
 
 nav {
-    display: grid;
-    place-content: center center;
     background-color: #63D3A6;
-    height: 50px;
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 nav > ul {
@@ -40,7 +37,7 @@ nav > ul > li > a {
 .layout-container {
     display: flex;
     gap: 10px;
-    height: calc(100% - 200px - 20px);
+    height: calc(100% - 203px);
 }
 
 aside {
@@ -53,23 +50,12 @@ aside {
     width: 20%;
 }
 
-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
 menu > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    gap: 5px;
-}
-
-menu > ul > li a:hover {
-    text-decoration: underline;
+    gap: 20px;
 }
 
 menu > ul > li > a {
@@ -78,39 +64,40 @@ menu > ul > li > a {
     color: blue;
 }
 
+menu > ul > li a:hover {
+    text-decoration: underline;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #D1EBFF;
-    width: 80%;
-    padding: 10px;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 20px;
 }
 
 article {
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    margin-top: 10px;
-    background-color: #B3DAF1;
     text-align: center;
-    padding: 25px;
-    width: calc(95% - -20px);
+    background-color: #B3DAF1;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
 }
 
-article > .container {
+div.container {
     display: flex;
     justify-content: space-evenly;
 }
 
 figure, picture, .audio, .video {
-    display: grid;
-    place-content: center center;
     background-color: #FFF9C4;
     border-radius: 5px;
-    width: 150px;
-    height: 150px;
+    padding: 40px 50px;
 }
 
 figure > img, figcaption, 
@@ -122,17 +109,24 @@ audio, video {
 
 section {
     background-color: #4DA6FF;
-    width: calc(95% - -20px);
-    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
     padding: 20px;
-    display: grid;
-    place-content: center center;
 }
 
 footer {
     background-color: #BBA9F1;
-    height: 40px;
-    display: grid;
-    place-content: center center;
+    text-align: center;
+    padding: 10px;
     margin-top: 10px;
 }
+
+abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+    position: relative;
+    color: #005eff;
+    font-weight: bold;
+}
+  
