@@ -1,3 +1,15 @@
+:root {
+    --cor-background: #64748b;
+    --cor-header: #FF7890;
+    --cor-nav: #45E0A7;
+    --cor-aside: #FACFD6;
+    --cor-main: #C9ECFF;
+    --cor-article: #6FDBFF;
+    --cor-container: #FEF3B5;
+    --cor-section: #00A8FF;
+    --cor-footer: #B880FF;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,19 +18,19 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #64748b;
+    background-color: var(--cor-background);
     width: 100vw;
     height: 100vh;
 }
 
 header {
-    background-color: #FF7F87;
+    background-color: var(--cor-header);
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #63D3A6;
+    background-color: var(--cor-nav);
     text-align: center;
     padding: 10px;
     margin: 10px 0;
@@ -46,7 +58,7 @@ aside {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: #F8D1D1;
+    background-color: var(--cor-aside);
     width: 20%;
 }
 
@@ -59,20 +71,21 @@ menu > ul {
 }
 
 menu > ul > li > a {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease, text-decoration 0.2s ease;
     text-decoration: none;
-    font-size: 1em;
-    color: blue;
 }
 
-menu > ul > li a:hover {
-    text-decoration: underline;
+menu > ul > li > a:hover {
+    transform: scale(1.2);
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #D1EBFF;
+    background-color: var(--cor-main);
     flex-grow: 1;
     padding: 20px;
     gap: 20px;
@@ -82,7 +95,7 @@ article {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #B3DAF1;
+    background-color: var(--cor-article);
     border-radius: 5px;
     width: 100%;
     padding: 10px;
@@ -95,7 +108,7 @@ div.container {
 }
 
 figure, picture, .audio, .video {
-    background-color: #FFF9C4;
+    background-color: var(--cor-container);
     border-radius: 5px;
     padding: 40px 50px;
     transition: background-color 0.4s ease;
@@ -109,7 +122,7 @@ audio, video {
 
 
 section {
-    background-color: #4DA6FF;
+    background-color: var(--cor-section);
     width: 100%;
     border-radius: 5px;
     text-align: center;
@@ -117,7 +130,7 @@ section {
 }
 
 footer {
-    background-color: #BBA9F1;
+    background-color: var(--cor-footer);
     text-align: center;
     padding: 10px;
     margin-top: 10px;
@@ -127,6 +140,5 @@ abbr {
     text-decoration: underline dotted;
     cursor: help;
     position: relative;
-    color: #005eff;
     font-weight: bold;
 }
