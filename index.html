@@ -38,14 +38,14 @@
                 <h2>&lt;<abbr title="Bloco de conteúdo independente e reutilizável, como um post, comentário, ou notícia.">article</abbr>&gt;</h2>
 
                 <div class="container">
-                    <figure>
+                    <figure id="area-figure">
                         <h3>&lt;<abbr title="Usado para mídias com legenda, como imagens, gráficos ou vídeos.">figure</abbr>&gt;</h3>
 
                         <img src="#" alt="Exemplo 1" />
                         <figcaption>Descrição</figcaption>
                     </figure>
 
-                    <picture>
+                    <picture id="area-picture">
                         <h3>&lt;<abbr title="Permite carregar diferentes versões da mesma imagem, com base no tamanho da tela ou tipo de imagem.">picture</abbr>&gt;</h3>
 
                         <source media="(max-width: 750px)" srcset="#" type="image/png">
@@ -53,7 +53,7 @@
                         <img src="imagem.jpg" alt="Imagem responsiva">
                     </picture>
 
-                    <div class="audio">
+                    <div class="audio" id="area-audio">
                         <h3>&lt;<abbr title="Usado para reproduzir som ou música.">audio</abbr>&gt;</h3>
 
                         <audio preload="metadata" autoplay controls loop>
@@ -69,7 +69,7 @@
                         </audio>
                     </div>
 
-                    <div class="video">
+                    <div class="video" id="area-video">
                         <h3>&lt;<abbr title="Usado para reproduzir vídeos no navegador.">video</abbr>&gt;</h3>
 
                         <video width="500" poster="imagens/#.png" controls autoplay loop>
@@ -93,5 +93,6 @@
             <h2>&lt;<abbr title="Rodapé da página ou de uma seção. Pode conter créditos, links, contatos, etc.">footer</abbr>&gt;</h2>
         </footer>
 
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>
