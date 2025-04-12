@@ -98,6 +98,7 @@ figure, picture, .audio, .video {
     background-color: #FFF9C4;
     border-radius: 5px;
     padding: 40px 50px;
+    transition: background-color 0.4s ease;
 }
 
 figure > img, figcaption, 
@@ -129,4 +130,3 @@ abbr {
     color: #005eff;
     font-weight: bold;
 }
-  
