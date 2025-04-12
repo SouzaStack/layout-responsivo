@@ -21,7 +21,7 @@ window.onload = () => {
 
          setTimeout(() => {
            targetElement.style.backgroundColor = ""; // volta ao normal depois de 5s
-         }, 500);
+         }, 1000);
        }
      });
    });
